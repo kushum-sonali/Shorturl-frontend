@@ -1,0 +1,143 @@
+*body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #131212;
+}
+.main{
+    width: 100%;
+    height: 100vh!important  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.main-1-child{
+    width: 100%;
+    height: 100%!important;
+    /* background-color: rgb(249, 248, 247); */
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    /* margin-top: -200px; */
+}
+.children-1{
+    background-color: rgb(242,62,121);
+    border-radius: 10px;
+    width: 50%;
+    height: 60vh;
+    flex-direction: column;
+    display: flex;
+    font-weight: bold;
+    box-shadow: 0 0 30px rgb(17,205,206);
+    justify-content: center;
+    align-items: center;
+ 
+
+}
+.title{
+  font-family: 'Times New Roman';
+  font-weight:800;
+  font-size: 40px;
+  color: white;
+  /* margin-top: -200px; */
+}
+input{
+  
+    width: 80%;
+    height: 60px;
+
+    padding: 500px;
+    border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    /* margin-bottom: 200px; */
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(58, 56, 56);
+  /* background-color: #1a1a1a; */
+
+    box-shadow: 0 0 30px rgb(247, 246, 246);
+}
+input::placeholder{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+input:hover {
+  border-color: #f40606;
+}
+input:focus,
+input:focus-visible {
+  outline: 6px auto -webkit-focus-ring-color;
+}
+button {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 30px rgb(247, 246, 246);
+
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  /* background-color: #1a1a1a; */
+  background-color: rgb(58, 56, 56);
+
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: #fff;
+  
+}
+button:hover {
+  border-color: #fff;
+}
+button:focus,
+button:focus-visible {
+  outline: 6px auto -webkit-focus-ring-color;
+}
+#btn{
+
+display: none;
+}
+@media  (max-width: 768px) {
+    .children-1{
+        width: max-content;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .title{
+        font-size: 30px;
+    }
+    input{
+        width: 80%;
+        height: 50px;
+        font-size: 15px;
+    }
+    button{
+        width:max-content;
+        height: max-content;
+        font-size: 15px;
+    }
+    .main-1-child{
+        width: 100%;
+        height: 100%;
+    }
+    .main{
+        width: 100%;
+        height: 100vh!important  ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+}
