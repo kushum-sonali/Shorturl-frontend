@@ -18,11 +18,12 @@ function InputUrl() {
     e.preventDefault();
     btn.style.display='block';
 
-    const res = await axios.post('http://localhost:3000/url', {
+    const res = await axios.post('https://shorturl-tau.vercel.app/url', {
       url
     });
+    
     console.log(res);
-    setUrl(`localhost:3000/${res.data.shortId}`);
+    setUrl(`https://shorturl-tau.vercel.app/${res.data.shortId}`);
    
   }
   return (
